@@ -1,0 +1,325 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding:15px;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height:100%
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Increase font size */
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #ffcc00; /* Highlight effect */
+}
+
+/* Home Section */
+.homeSection {
+    text-align: center;
+    padding: 50px 20px;
+    background-image:url("Background_image.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homeSection h1 {
+    font-size: 65px; /* Increase text size */
+    color:plum; /* Text color */
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+    text-transform: uppercase; /* Make text uppercase */
+    font-weight: bold; /* Make text bold */
+    letter-spacing: 3px; /* Increase letter spacing */
+    text-shadow: 4px 4px 6px rgba(244, 228, 228, 0.7); /* Add shadow for better visibility */
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: inline-block;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.homeSection h1:hover {
+    transform: scale(1.1); /* Slightly enlarge text on hover */
+    background: rgba(148, 10, 111, 0.2); /* Change background color */
+    color: #ffcc00; /* Change text color on hover */
+    text-shadow: 5px 5px 8px rgba(202, 12, 142, 0.8); /* Add glow effect */
+}
+
+/* About Section */
+.aboutSection {
+    background-image: url("aboutus.webp"); /* Apply the same image for both sections */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background: linear-gradient(to bottom right, #f4f4f4, #ddd); /* Smooth gradient background */
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-image:url("aboutus.webp");
+}
+
+.aboutSection h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: pink;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 4px 12px 0.7px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Shop Section */
+.shopSection {
+    padding: 50px;
+    text-align: center;
+}
+
+.shopSection h2 {
+    color: #007BFF;
+    font-size: 30px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    border: 2px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-label {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Contact Section */
+.contactSection {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.contactSection h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Feedback Section */
+.feedbackSection {
+    padding: 50px;
+    background-color:pink);
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow to add depth */
+    border-radius: 15px; /* Rounded corners for a softer look */
+}
+
+.feedbackSection h2 {
+    font-size: 35px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    background-color: #D4A1A1;
+}
+
+.feedback-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    background: rgb(212, 209, 203);
+    border-radius: 15px;
+    border-color:2px solid #ddd;
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 0.1);
+}
+
+.feedback-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color:#333;
+}
+
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    color:rgb(242, 198, 223);
+    font-size: 14px;
+    background-color: #f9f9f9; /* Lighter background for input fields */
+
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    border-color: #D1A7A4; /* Blue border on focus to align with the theme */
+    outline: none;
+    box-shadow: 0 0 5px rgba(209, 167, 164, 0.5); /* Subtle glow effect */
+
+}
+
+.feedback-form button {
+    padding: 14px 25px;
+    background-color: #a79bcb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Added space above button */
+
+}
+
+.feedback-form button:hover {
+    background-color: #F1C6B2;
+    transform: scale(1.05); /* Slight scale effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding shadow on hover */
+
+}
+/* Feedback Input Field and Textarea Hover Effect */
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+    border-color: #D1A7A4; /* Dusty Rose Pink border on hover */
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between cards */
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url("aboutus.webp");
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    background-attachment: fixed; /* Fixed background on scroll */
+    margin-top: -30px; /* Negative margin to make the sections meet */
+}
+
+/* Mission & Vision Cards */
+.mission, .vision {
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9); /* Soft white background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 2px solid #D4A1A1;  /* Light border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+}
+
+/* Heading for Mission and Vision */
+.mission h3, .vision h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Text for Mission and Vision */
+.mission p, .vision p {
+    font-family: 'Verdana', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    font-style: italic; /* Adds a touch of elegance */
+}
+
+/* Hover Effect */
+.mission:hover, .vision:hover {
+    transform: scale(1.05); /* Slight scale effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Add a background color to differentiate the mission and vision */
+.mission {
+    background-color: #f5f5f5; /* Light gray */;
+}
+
+.vision {
+    background-color: #f5f5f5; /* Soft blue */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .mission-vision {
+        flex-direction: column; /* Stack vertically */
+        gap: 20px;
+    }
+
+    .mission, .vision {
+        width: 90%; /* Make cards responsive */
+    }
+}
